@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Calm Connect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            padding: 1rem;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .responsive {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        @media (min-width: 600px) {
+            .responsive {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CalmConnect</h1>
+    <nav>
+        <a href="Untitled-1.html">Home</a>
+        <a href="book.html">Book Appointment</a>
+        <a href="connect.html">Connect with Peers</a>
+        <a href="resources.html">Resources</a>
+    </nav>
+</header>
+<!-- Resources Page -->
+<div class="container" id="resources">
+    <h2>Resources</h2>
+    <p>Access helpful information for students.</p>
+    <ul>
+        <li><a href="https://www.apa.org/monitor/2022/10/mental-health-campus-care">Mental Health Articles</a></li>
+        <li><a href="https://www.vu.edu.au/about-vu/news-events/study-space/10-tips-on-how-to-study-effectively">Study Tips</a></li>
+        <li><a href="https://youtube.com/playlist?list=PLhHLxGsctxd27eHUHTs6lqMvimmV3f9dv&feature=shared">Tutors</a></li>
+    </ul>
+    <button onclick="alert('More resources coming soon!')">View More</button>
+</div>
+
+<script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
